@@ -61,7 +61,7 @@ public class P3_RubricProvider implements RubricProvider {
         JUnitTestRef.ofMethod(() -> AdjacencyGraphTests.class.getDeclaredMethod("testConstructorMaps", Set.class, Set.class))
     );
     private static final Criterion H1_C_2 = makeCriterion(
-        "[[[edges]]] wird im Konstruktor von [[[AdjacencyGraph]]] korrekt gesetzt.",
+        "Die Kanten werden im Konstruktor von [[[AdjacencyGraph]]] korrekt in die Adjazenzmatrix eingefügt.",
         JUnitTestRef.ofMethod(() -> AdjacencyGraphTests.class.getDeclaredMethod("testConstructorEdges", Set.class, Set.class))
     );
     private static final Criterion H1_C_3 = makeCriterion(
