@@ -1,0 +1,60 @@
+{
+  "twoNodes": [
+    {
+      "nodes": ["A", "B"],
+      "edges": [{"a": "A", "b": "B", "weight": 1}]
+    },
+    {
+      "nodes": [1, 2],
+      "edges": [{"a": 1, "b": 2, "weight": 1}]
+    }
+  ],
+  "threeNodes": [
+    {
+      "nodes": ["A", "B", "C"],
+      "edges": [{"a": "A", "b": "B", "weight": 1}, {"a": "B", "b": "C", "weight": 1}]
+    },
+    {
+      "nodes": [1, 2, 3],
+      "edges": [{"a": 1, "b": 2, "weight": 1}, {"a": 2, "b": 3, "weight": 1}]
+    }
+  ],
+  "multipleNodes": [
+    {
+      "nodes": ["A", "B", "C", "D"],
+      "edges": [
+        {"a": "A", "b": "B", "weight": 1},
+        {"a": "B", "b": "C", "weight": 1},
+        {"a": "C", "b": "D", "weight": 1},
+        {"a": "D", "b": "A", "weight": 1}
+      ]
+    },
+    {
+      "nodes": [1, 2, 3, 4, 5],
+      "edges": [
+        {"a": 1, "b": 2, "weight": 1},
+        {"a": 2, "b": 3, "weight": 1},
+        {"a": 3, "b": 4, "weight": 1},
+        {"a": 4, "b": 1, "weight": 1},
+        {"a": 1, "b": 5, "weight": 1},
+        {"a": 2, "b": 5, "weight": 1},
+        {"a": 3, "b": 5, "weight": 1},
+        {"a": 4, "b": 5, "weight": 1}
+      ]
+    },
+    {
+      "nodes": [1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9],
+      "edges": [
+        {"a": 1.1, "b": 2.2, "weight": 1},
+        {"a": 2.2, "b": 3.3, "weight": 1},
+        {"a": 3.3, "b": 4.4, "weight": 1},
+        {"a": 4.4, "b": 5.5, "weight": 1},
+        {"a": 5.5, "b": 6.6, "weight": 1},
+        {"a": 6.6, "b": 7.7, "weight": 1},
+        {"a": 7.7, "b": 8.8, "weight": 1},
+        {"a": 8.8, "b": 9.9, "weight": 1},
+        {"a": 9.9, "b": 1.1, "weight": 1}
+      ]
+    }
+  ]
+}

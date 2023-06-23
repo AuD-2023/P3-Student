@@ -1,0 +1,14 @@
+{
+  "init": [
+    {
+      "nodes": ["A", "B", "C", "D", "E"],
+      "edges": [
+        {"a": "A", "b": "B", "weight": 1},
+        {"a": "A", "b": "C", "weight": 1},
+        {"a": "B", "b": "D", "weight": 1},
+        {"a": "C", "b": "D", "weight": 1},
+        {"a": "D", "b": "E", "weight": 1}
+      ]
+    }
+  ]
+}

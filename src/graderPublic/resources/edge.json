@@ -1,0 +1,17 @@
+[
+  {
+    "edge1": {"a": "A", "b": "B", "weight": 1},
+    "edge2": {"a": "B", "b": "C", "weight": 1},
+    "expectedValue": 0
+  },
+  {
+    "edge1": {"a": "A", "b": "B", "weight": 1},
+    "edge2": {"a": "B", "b": "C", "weight": 2},
+    "expectedValue": -1
+  },
+  {
+    "edge1": {"a": "A", "b": "B", "weight": 2},
+    "edge2": {"a": "B", "b": "C", "weight": 1},
+    "expectedValue": 1
+  }
+]

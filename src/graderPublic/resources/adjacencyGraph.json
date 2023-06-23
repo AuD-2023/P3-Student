@@ -1,0 +1,56 @@
+{
+  "constructor": [
+    {
+      "nodes": ["A", "B"],
+      "edges": [
+        {"a": "A", "b": "B", "weight": 1}
+      ]
+    },
+    {
+      "nodes": [1, 2, 3, 4, 5],
+      "edges": [
+        {"a": 1, "b": 2, "weight": 1},
+        {"a": 2, "b": 3, "weight": 1},
+        {"a": 3, "b": 4, "weight": 1},
+        {"a": 4, "b": 5, "weight": 1}
+      ]
+    }
+  ],
+  "getAdjacentEdgesPositiveWeight": [
+    {
+      "nodes": ["A", "B"],
+      "edges": [
+        {"a": "A", "b": "B", "weight": 1}
+      ]
+    },
+    {
+      "nodes": [1, 2, 3, 4, 5],
+      "edges": [
+        {"a": 1, "b": 2, "weight": 1},
+        {"a": 2, "b": 3, "weight": 1},
+        {"a": 3, "b": 4, "weight": 1},
+        {"a": 4, "b": 5, "weight": 1}
+      ]
+    }
+  ],
+  "getAdjacentEdgesWithZeroWeights": [
+    {
+      "nodes": ["A", "B", "C"],
+      "edges": [
+        {"a": "A", "b": "B", "weight": 1},
+        {"a": "A", "b": "C", "weight": 0},
+        {"a": "B", "b": "C", "weight": 1}
+      ]
+    },
+    {
+      "nodes": [1, 2, 3, 4, 5],
+      "edges": [
+        {"a": 1, "b": 2, "weight": 1},
+        {"a": 1, "b": 3, "weight": 0},
+        {"a": 2, "b": 4, "weight": 0},
+        {"a": 3, "b": 4, "weight": 1},
+        {"a": 4, "b": 5, "weight": 1}
+      ]
+    }
+  ]
+}

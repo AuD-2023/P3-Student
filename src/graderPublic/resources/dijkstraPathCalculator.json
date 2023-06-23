@@ -1,0 +1,49 @@
+{
+  "init": [
+    {
+      "graph": {
+        "nodes": ["A", "B", "C"],
+        "edges": [
+          {"a": "A", "b": "B", "weight": 1},
+          {"a": "C", "b": "C", "weight": 1}
+        ]
+      },
+      "startNode": "A"
+    }
+  ],
+  "extractMinSimple": [
+    {
+      "graph": {
+        "nodes": ["A", "B", "C"],
+        "edges": [
+          {"a": "A", "b": "B", "weight": 1},
+          {"a": "B", "b": "C", "weight": 1}
+        ]
+      },
+      "distances": [
+        {"key": "A", "value": 0},
+        {"key": "B", "value": 2147483647},
+        {"key": "C", "value": 2147483647}
+      ],
+      "expected": "A"
+    }
+  ],
+  "extractMinFull": [
+    {
+      "graph": {
+        "nodes": ["A", "B", "C"],
+        "edges": [
+          {"a": "A", "b": "B", "weight": 1},
+          {"a": "B", "b": "C", "weight": 1}
+        ]
+      },
+      "distances": [
+        {"key": "A", "value": 0},
+        {"key": "B", "value": 1},
+        {"key": "C", "value": 2147483647}
+      ],
+      "remainingNodes": ["B", "C"],
+      "expected": "B"
+    }
+  ]
+}
