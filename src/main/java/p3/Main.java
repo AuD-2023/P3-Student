@@ -1,5 +1,8 @@
 package p3;
 
+import javafx.application.Application;
+import p3.gui.MyApplication;
+
 /**
  * Main entry point in executing the program.
  */
@@ -8,9 +11,9 @@ public class Main {
     /**
      * Main entry point in executing the program.
      *
-     * @param args program arguments, currently ignored
+     * @param args program arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Application.launch(MyApplication.class, args);
     }
 }
