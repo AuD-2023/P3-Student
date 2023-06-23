@@ -1,6 +1,11 @@
 package p3;
 
-import org.sourcegrade.jagr.api.rubric.*;
+import org.sourcegrade.jagr.api.rubric.Criterion;
+import org.sourcegrade.jagr.api.rubric.GradeResult;
+import org.sourcegrade.jagr.api.rubric.Grader;
+import org.sourcegrade.jagr.api.rubric.JUnitTestRef;
+import org.sourcegrade.jagr.api.rubric.Rubric;
+import org.sourcegrade.jagr.api.rubric.RubricProvider;
 import org.sourcegrade.jagr.api.testing.RubricConfiguration;
 import p3.graph.AdjacencyGraphTests;
 import p3.graph.AdjacencyMatrixTests;

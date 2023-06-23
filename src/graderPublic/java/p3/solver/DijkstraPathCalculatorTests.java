@@ -1,13 +1,13 @@
 package p3.solver;
 
 import org.junit.jupiter.api.BeforeAll;
-import p3.util.SerializedEntry;
-import p3.util.SerializedGraph;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junitpioneer.jupiter.json.JsonClasspathSource;
 import org.junitpioneer.jupiter.json.Property;
 import org.sourcegrade.jagr.api.rubric.TestForSubmission;
 import org.tudalgo.algoutils.tutor.general.assertions.Context;
+import p3.util.SerializedEntry;
+import p3.util.SerializedGraph;
 import p3.util.Utils;
 
 import java.lang.reflect.Field;
@@ -17,7 +17,10 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static org.tudalgo.algoutils.tutor.general.assertions.Assertions2.*;
+import static org.tudalgo.algoutils.tutor.general.assertions.Assertions2.assertEquals;
+import static org.tudalgo.algoutils.tutor.general.assertions.Assertions2.assertNull;
+import static org.tudalgo.algoutils.tutor.general.assertions.Assertions2.assertTrue;
+import static org.tudalgo.algoutils.tutor.general.assertions.Assertions2.contextBuilder;
 
 @TestForSubmission
 public class DijkstraPathCalculatorTests {
