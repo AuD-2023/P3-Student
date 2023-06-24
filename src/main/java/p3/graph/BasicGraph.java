@@ -1,5 +1,7 @@
 package p3.graph;
 
+import p3.SetUtils;
+
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Supplier;
@@ -39,6 +41,9 @@ public class BasicGraph<N> implements Graph<N> {
      * @param edges the edges.
      */
     public BasicGraph(Set<N> nodes, Set<Edge<N>> edges) {
+        this.nodes = SetUtils.immutableCopyOf(nodes);
+        this.edges = SetUtils.immutableCopyOf(edges);
+
         throw new UnsupportedOperationException("Not implemented yet"); // TODO H1 a): remove if implemented
     }
 
