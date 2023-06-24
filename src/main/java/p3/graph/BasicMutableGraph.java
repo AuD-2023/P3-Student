@@ -41,7 +41,7 @@ public class BasicMutableGraph<N> extends BasicGraph<N> implements MutableGraph<
         mutableNodes.addAll(nodes);
         mutableEdges.addAll(edges);
 
-        for (Map.Entry<N, Set<Edge<N>>> entry : super.backing.entrySet()) {
+        for (Map.Entry<N, Set<Edge<N>>> entry : backing.entrySet()) {
             mutableBacking.put(entry.getKey(), new HashSet<>(entry.getValue()));
         }
     }
