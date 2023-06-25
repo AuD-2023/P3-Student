@@ -37,7 +37,8 @@ public class AdjacencyGraphTransformer implements ClassTransformer {
 
         @Override
         public MethodVisitor visitMethod(int access, String name, String descriptor, String signature, String[] exceptions) {
-            if (name.equals("<init>") && descriptor.equals("(Ljava/util/Set;Ljava/util/Set;)V")) {
+            if (name.equals("<init>") && descriptor.equals("(Ljava/util/Set;Ljava/util/Set;)V") ||
+                name.startsWith("lambda$new$")) {
                 return new MethodVisitor(Opcodes.ASM9, super.visitMethod(access, name, descriptor, signature, exceptions)) {
                     @Override
                     public void visitMethodInsn(int opcode, String owner, String name, String descriptor, boolean isInterface) {
