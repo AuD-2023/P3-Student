@@ -57,7 +57,7 @@ public class KruskalMSTCalculatorTests {
         assertEquals(0, Utils.<Set<?>>getFieldValue(mstEdgesField, kruskalMSTCalculatorInstance).size(), context,
             result -> "[[[mstEdges]]] contains elements after calling [[[init]]]");
         assertEquals(serializedGraph.nodes().size(), mstGroups.size(), context,
-            result -> "[[[mstEdges]]] does not have the correct size");
+            result -> "[[[mstGroups]]] does not have the correct size");
         for (Set<N> mstGroup : mstGroups) {
             Context mstGroupContext = contextBuilder()
                 .add(context)
