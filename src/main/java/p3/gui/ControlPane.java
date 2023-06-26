@@ -14,6 +14,8 @@ public class ControlPane extends Pane {
     private final Button nextStepButton = new Button("Next Step");
     private final Button centerButton = new Button("Center Graph");
 
+    private GraphPane<?> graphPane;
+
     /**
      * Constructs a new control pane.
      */
@@ -28,6 +30,8 @@ public class ControlPane extends Pane {
      * @param graphPane the graph pane to control
      */
     public void init(Animation animation, GraphPane<?> graphPane) {
+        this.graphPane = graphPane;
+
         HBox hBox = new HBox(10);
         hBox.getChildren().addAll(nextStepButton, centerButton);
         getChildren().add(hBox);
@@ -39,11 +43,15 @@ public class ControlPane extends Pane {
             }
         });
 
-        centerButton.setOnAction(event -> graphPane.center());
+        centerButton.setOnAction(event -> this.graphPane.center());
     }
 
     public void disableNextStepButton() {
         nextStepButton.setDisable(true);
+    }
+
+    public void setGraphPane(GraphPane<?> graphPane) {
+        this.graphPane = graphPane;
     }
 
 }
