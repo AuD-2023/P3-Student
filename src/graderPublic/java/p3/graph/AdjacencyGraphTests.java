@@ -170,9 +170,9 @@ public class AdjacencyGraphTests {
                 .build();
 
             assertEquals(expectedEdges.size(), actualEdges.size(), methodCallContext,
-                result -> "The set returned by [[[getAdjacent]]] does not have the correct size");
+                result -> "The set returned by [[[getAdjacentEdges]]] does not have the correct size");
             assertTrue(actualEdges.stream().anyMatch(edge -> edge.a().equals(node) || edge.b().equals(node)), methodCallContext,
-                result -> "The set returned by [[[getAdjacent]]] does not contain all expected edges");
+                result -> "The set returned by [[[getAdjacentEdges]]] does not contain all expected edges");
         }
     }
 }
