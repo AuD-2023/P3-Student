@@ -17,7 +17,17 @@ public class MyApplication extends Application {
     @Override
     public void start(Stage primaryStage) {
 
-        AnimationScene scene = createKruskalScene();
+        SelectionScene scene = new SelectionScene();
+        scene.dijkstraButton.setOnAction(event -> {
+            AnimationScene newScene = createDijkstraScene();
+            primaryStage.setScene(newScene);
+            primaryStage.setTitle(newScene.getTitle());
+        });
+        scene.kruskalButton.setOnAction(event -> {
+            AnimationScene newScene = createKruskalScene();
+            primaryStage.setScene(newScene);
+            primaryStage.setTitle(newScene.getTitle());
+        });
 
         primaryStage.setScene(scene);
         primaryStage.setTitle(scene.getTitle());
